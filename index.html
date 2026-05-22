@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalSphere</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <div>02:51</div>
+        <div class="right">
+            <span>LTE</span>
+            <span>74%</span>
+        </div>
+    </div>
+
+    <div class="phone-frame">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="logo">
+                <div class="logo-icon">✦</div>
+                <span>Vital<span class="highlight">Sphere</span></span>
+            </div>
+            <div class="header-actions">
+                <button class="icon-btn"><i class="fa-solid fa-sun"></i></button>
+                <button class="icon-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </header>
+
+        <main class="content">
+            <!-- You can switch content here using JS -->
+            <div id="home-screen">
+                <!-- Home Screen Content will be injected by JS or you can put default here -->
+            </div>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <button onclick="navigate(0)" class="nav-item active"><i class="fa-solid fa-house"></i><span>Home</span></button>
+            <button onclick="navigate(1)" class="nav-item"><i class="fa-solid fa-dumbbell"></i><span>Train</span></button>
+            <button onclick="navigate(2)" class="nav-item"><i class="fa-solid fa-apple-whole"></i><span>Nutrition</span></button>
+            <button onclick="navigate(3)" class="nav-item"><i class="fa-solid fa-chart-line"></i><span>Progress</span></button>
+            <button onclick="navigate(4)" class="nav-item"><i class="fa-solid fa-user"></i><span>Me</span></button>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
